@@ -1,0 +1,21 @@
+{
+  "name": "mern-stack-store-website",
+  "version": "1.0.0",
+  "description": "A full-stack e-commerce website built using the MERN stack (MongoDB, Express.js, React, Node.js). Features include product listing, shopping cart, user authentication, and order management.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon backend/server.js"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "mongoose": "^8.8.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
+}
