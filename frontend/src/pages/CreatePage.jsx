@@ -36,7 +36,11 @@ const CreatePage = () => {
   return (
     <Container maxW={"container.sm"}>
       <VStack spacing={8}>
-        <Heading as={"h1"} size={"2xl"} textAlign={"center"} mb={8}>
+        <Heading 
+        as={"h1"} size={"2xl"} textAlign={"center"} mb={8}
+        bgGradient={"linear(to-r, cyan.400, blue.500)"}
+        bgClip={"text"}
+        >
           Create New Product
         </Heading>
 
