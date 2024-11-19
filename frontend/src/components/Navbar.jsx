@@ -32,11 +32,11 @@ const Navbar = () => {
 
           <HStack spacing={2} alignItems={"center"}>
             <Link to={"/create"}>
-              <Button>
+              <Button title="create new product page">
                 <FaRegSquarePlus fontSize={20} />
               </Button>
             </Link>
-            <Button onClick={toggleColorMode}>
+            <Button title="theme toggle" onClick={toggleColorMode}>
               {colorMode === "light" ? <GoMoon /> : <FaRegLightbulb />}
             </Button>
           </HStack>
