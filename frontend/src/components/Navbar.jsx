@@ -1,4 +1,4 @@
-import { Container, Flex, Text, HStack, Button, useColorMode } from "@chakra-ui/react"
+import { Container, Flex, Text, HStack, Button, useColorMode, useColorModeValue } from "@chakra-ui/react"
 import { Link } from "react-router-dom";
 
 import { GoMoon } from "react-icons/go";
@@ -30,14 +30,14 @@ const Navbar = () => {
             <Link to={"/"}>Product Store</Link>
           </Text>
 
-          <HStack spacing={2} alignItems={"center"}>
-            <Link to={"/create"}>
-              <Button title="create new product page">
-                <FaRegSquarePlus fontSize={20} />
+          <HStack spacing={2} alignItems={"center"} >
+            <Link to={"/create"} >
+              <Button title="create new product page" bg={useColorModeValue("white","gray.700")}>
+                {colorMode === "light" ? <FaRegSquarePlus fontSize={20} color="blue" /> : <FaRegSquarePlus fontSize={20} color="cyan" />}
               </Button>
             </Link>
-            <Button title="theme toggle" onClick={toggleColorMode}>
-              {colorMode === "light" ? <GoMoon /> : <FaRegLightbulb />}
+            <Button title="theme toggle" onClick={toggleColorMode} bg={useColorModeValue("white","gray.700")}>
+              {colorMode === "light" ? <GoMoon fontSize={20} color="blue" /> : <FaRegLightbulb fontSize={20} color="cyan" />}
             </Button>
           </HStack>
 

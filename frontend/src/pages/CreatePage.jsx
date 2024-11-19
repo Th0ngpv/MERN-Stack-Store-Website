@@ -45,7 +45,7 @@ const CreatePage = () => {
         </Heading>
 
         <Box 
-          w={"full"} bg={useColorModeValue("white","gray.800")}
+          w={"full"} bg={useColorModeValue("white","gray.700")}
           p={6} rounded={"lg"} shadow={"md"}
         >
           <VStack spacing={4}>
